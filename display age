@@ -1,0 +1,44 @@
+#Program that prompts the user to enter his/her age.
+
+#Pseudocode
+
+#start program
+
+#prompt user to input age as an integer, assign to Age
+#input if age is >= 55, then display: Senior
+#input if age is >= 20 and <= 54, then display: Adult
+#input if age is >= 13 and <= 19, then display : Teen
+#input if age is <= 12, then display: Minor
+#generate the required output
+
+#Collaboration: none
+
+#End Program
+
+
+#Start Program
+
+
+#Get Age from user
+Age = int(input(' Please enter your Age in whole number:'))
+Senior = Age >= 55
+Adult = Age >= 20 and Age <= 54
+Teen = Age >= 13 and Age <= 19
+Minor = Age <=12
+
+#generate the required output and print result
+
+if Age >= 55:
+    Age = Senior
+    print('Senior.')
+elif Age >= 20 and Age <= 54:
+    Age = Adult
+    print(f'You are an Adult.')
+elif Age >= 13 and Age <= 19:
+    Age = Teen
+    print(f'You are a Teen.')
+elif Age >0 and Age<=12:
+    Age = Minor
+    print(f'You are a Minor.')
+else:
+    print('You have entered an invalid age. Thank you.')
